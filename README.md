@@ -12,3 +12,26 @@ Le prototype à réaliser en impression 3D doit intégrer les éléments suivant
 - **Deux moteurs pas à pas (avec encodeurs)**
 - **Système numérique** : Raspberry PI-5 pour le pilotage et STM32/Arduino pour le contrôle des moteurs.
 - **Bloc d’alimentation du système avec une batterie adéquate**
+
+  # Realisation du projet
+
+  ## Cahier de charge
+  **1. Architecture Technique**
+**1.1. Architecture Matérielle (Hardware)**
+
+- Châssis : Prototype réalisé en impression 3D.
+- Calculateur Principal (Cerveau) : Raspberry Pi 5.
+- Contrôleur Bas Niveau : Carte STM32 accompagné d'un MD25 pour l'asservissement des moteurs.
+- Capteur Principal : Un Lidar 2D.
+- Actionneurs : Deux moteurs pas-à-pas avec encodeurs, contrôlés par des drivers.
+- Alimentation : Batterie LiPo/Li-Ion avec circuits de régulation de puissance pour le Raspberry Pi, les moteurs et le Lidar.
+
+**1.2. Architecture Logicielle (Software)**
+
+- Système d'Exploitation :
+- Middleware : ROS 2 Humble Hawksbill.
+- Langages de Développement : Python et/ou C++.
+- Bibliothèques Clés ROS2 :
+          - nav2 : Pour la navigation, la planification (Nav2 Planner) et le contrôle (Nav2 Controller).
+          - slam_toolbox : Pour la cartographie SLAM.
+          - ros2_control : Pour une gestion abstraite et matérielle des actionneurs et capteurs.
