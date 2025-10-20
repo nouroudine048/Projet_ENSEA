@@ -47,13 +47,17 @@ Le prototype à réaliser en impression 3D doit intégrer les éléments suivant
 
 -**OF1 : Contrôle des Moteurs**
 Le système doit contrôler avec précision la vitesse et la direction des deux moteurs pas-à-pas (avec encodeurs) pour assurer les déplacements.
+
 -**OF2 : Cartographie et Localisation**
 Le robot doit être capable de construire une carte 2D de son environnement (SLAM - Simultaneous Localization and Mapping) en utilisant les données du Lidar.
 Il doit pouvoir se localiser en temps réel sur cette carte.
+
 -**OF3 : Planification de Trajet**
 Sur une carte préexistante ou construite, le robot doit calculer un trajet optimal entre un point de départ A et un point d'arrivée B défini par l'utilisateur.
+
 -**OF4 : Navigation et Évitement d'Obstacles**
 Le robot doit suivre le trajet planifié.
 Il doit détecter et éviter les obstacles statiques et dynamiques non présents sur la carte en modifiant sa trajectoire localement.
+
 -**OF5 : Interface Utilisateur**
 Fournir un moyen simple de définir les points A et B (ex: via un terminal ou une interface graphique simple).
